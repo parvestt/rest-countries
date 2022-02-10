@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST Countries | Where in the world</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-theme="light">
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <h1 class="navbar__logo">Where in the world?</h1>
+                <div class="navbar__toggle">
+                    <button class="navbar__toggle--btn">
+                        <span><i class="fa-regular fa-moon"></i></span>
+                        Dark Mode
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="countries">
+            <div class="container">
+                <div class="countries__top">
+                    <div class="countries__search">
+                        <form class="search__form">
+                            <div class="search__form--group">
+                                <label for="country"><i class="fa-solid fa-magnifying-glass"></i></label>
+                                <input type="text" name="country" id="country" placeholder="Search for a country...">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="countries__filter">
+                        <button class="filter__btn">
+                            Filter by Region
+                            <span><i class="fa-solid fa-chevron-down"></i></span>
+                        </button>
+                        <div class="filter__regions">
+                            <ul>
+                                <li data-region="all">All</li>
+                                <li data-region="Africa">Africa</li>
+                                <li data-region="Americas">America</li>
+                                <li data-region="Asia">Asia</li>
+                                <li data-region="Europe">Europe</li>
+                                <li data-region="Oceania">Oceania</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="countries__container">
+                    <!-- Card 01 -->
+                    <a href="#" class="countries__card">
+                        <div class="countries__flag">
+                            <img src="https://flagcdn.com/bd.svg" alt="Bangladesh">
+                        </div>
+                        <div class="countries__body">
+                            <h2>Bangladesh</h2>
+                            <h3>Population: <span>164689383</span></h3>
+                            <h3>Region: <span>Asia</span></h3>
+                            <h3>Capital: <span>Dhaka</span></h3>
+                        </div>
+                    </a>
+                    <!-- End -->
+                </div>
+            </div>
+        </section>
+        <section class="country">
+            <div class="container">
+                <div class="country__top">
+                    <a href="#" class="country__backBtn">
+                        <span><i class="fa-solid fa-arrow-left-long"></i></span>
+                        Back
+                    </a>
+                </div>
+                <div class="country__content">
+                    <div class="country__flag">
+                        <img src="https://flagcdn.com/bd.svg" alt="Bangladesh">
+                    </div>
+                    <div class="country__data">
+                        <h2>Bangladesh</h2>
+                        <div class="country__row">
+                            <div class="country__col">
+                                <h3>Native Name: <span>বাংলাদেশ</span></h3>
+                                <h3>Population: <span>164689383</span></h3>
+                                <h3>Region: <span>Asia</span></h3>
+                                <h3>Sub Region: <span>Southern Asia</span></h3>
+                                <h3>Capital: <span>Dhaka</span></h3>
+                            </div>
+                            <div class="country__col">
+                                <h3>Top Level Domain: <span>.bd</span></h3>
+                                <h3>Currencies: <span>Bangladeshi taka</span></h3>
+                                <h3>Languages: <span>Bengali</span></h3>
+                            </div>
+                        </div>
+                        <div class="country__borders">
+                            <h3>Border Countries: </h3>
+                            <ul>
+                                <li><a href="#">Mayanmar</a></li>
+                                <li><a href="#">India</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Custom script -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
